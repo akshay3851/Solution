@@ -27,11 +27,11 @@ public class Question1Solution {
         });
 
         // put data from sorted list to hashmap
-        HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>();
+        HashMap<String, Integer> sortedMap = new LinkedHashMap<String, Integer>();
         for (Map.Entry<String, Integer> aa : list) {
-            temp.put(aa.getKey(), aa.getValue());
+            sortedMap.put(aa.getKey(), aa.getValue());
         }
-        return temp;
+        return sortedMap;
     }
 
     // Method returns list of top 10 Hashtags
